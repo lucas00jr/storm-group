@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatos e Esquema</title>
+</head>
+<body>
+<h1>Fatos e Esquema</h1>
+<h2>Fatos Adicionados</h2>
+<ul>
+    {% for fact in facts %}
+    <li>{{ fact }}</li>
+    {% endfor %}
+</ul>
+<h2>Esquema</h2>
+<ul>
+    {% for sch in schema %}
+    <li>{{ sch }}</li>
+    {% endfor %}
+</ul>
+<h2>Fatos Filtrados</h2>
+<ul>
+    {% for fact in factsFiltrados %}
+    <li>{{ fact }}</li>
+    {% endfor %}
+</ul>
+<a href="/add_fact">Adicionar Fato</a>
+<a href="/add_schema">Adicionar Esquema</a>
+</body>
+</html>

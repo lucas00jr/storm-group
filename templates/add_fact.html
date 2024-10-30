@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Fato</title>
+</head>
+<body>
+<h1>Adicionar Fato</h1>
+<form method="post">
+    <label for="entity">Entidade:</label>
+    <input type="text" id="entity" name="entity" required><br>
+
+    <label for="attribute">Atributo:</label>
+    <input type="text" id="attribute" name="attribute" required><br>
+
+    <label for="value">Valor:</label>
+    <input type="text" id="value" name="value" required><br>
+
+    <label for="added">Ativo:</label>
+    <select id="added" name="added" required>
+        <option value="True">Sim</option>
+        <option value="False">Não</option>
+    </select><br>
+
+    <button type="submit">Adicionar</button>
+</form>
+<a href="/">Voltar</a>
+</body>
+</html>

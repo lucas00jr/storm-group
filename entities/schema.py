@@ -1,5 +1,12 @@
-# Define a estrutura do schema com as cardinalidades dos atributos
-schema = [
-    ('endereço', 'cardinality', 'one'),
-    ('telefone', 'cardinality', 'many')
-]
+# Inicializa a lista de esquemas como vazia
+schema = []
+
+
+# Função para adicionar um esquema
+def add_schema(attribute, cardinality):
+    schema.append((attribute, 'cardinality', cardinality))
+
+
+# Exemplo de como adicionar esquemas iniciais
+add_schema('endereço', 'one')
+add_schema('telefone', 'many')
