@@ -1,0 +1,25 @@
+# pyproject.toml
+
+[tool.poetry]
+name = "fatcs"
+version = "0.1.0"
+description = "Desafio pytho Storm."
+author = "Lucas Junior
+email = lucas_sjf@hotmail.com
+readme = "README.md"  # Arquivo README para descrever o projeto
+
+# Define o ponto de entrada, que facilita a execução do script principal
+packages = [
+    { include = "entities" },
+    { include = "services" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.scripts]
+my_app = "main:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
